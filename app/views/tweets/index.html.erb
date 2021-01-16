@@ -7,7 +7,7 @@
      <ul>
       <% @tweets.each do |tweet| %>
         <li class="list-group py-2">
-         <%= image_tag tweet.image.variant(resize: '300x500') if tweet.image.attached? %>
+         <%= image_tag tweet.image.variant(resize: '300x300') if tweet.image.attached? %>
         </li>
         <li class="list-group py-1">
          <%= link_to tweet.title,tweet_path(tweet) %>
