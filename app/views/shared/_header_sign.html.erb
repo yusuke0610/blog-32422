@@ -16,7 +16,7 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <% if user_signed_in? %>
     <div class="text-center">
-    <%= link_to "my_page",user_path(current_user.id) %>
+    <%= link_to current_user.name,user_path(current_user.id) %>
     </div>
     <div class=text-center>
     <%= link_to "log_out", destroy_user_session_path, method: :delete %>
